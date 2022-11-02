@@ -13,3 +13,6 @@ Extract/Unzip files from (https://www.kaggle.com/datasets/aysendegerli/hmcqu-dat
 * sklearn
 * os
 
+## Sample Task
+
+![alt text](https://github.com/Phrungck/myocardial-segmentation/blob/main/sample.PNG)
