@@ -12,14 +12,14 @@ def f_score(pr, gt):
     return score
 
 
-def accuracy(pr, gt, threshold=0.5, ignore_channels=None):
+def accuracy(pr, gt):
 
     tp = torch.sum(gt == pr)
     score = tp / gt.reshape(-1).shape[0]
     return score
 
 
-def precision(pr, gt, threshold=None, ignore_channels=None):
+def precision(pr, gt):
 
     tp = torch.sum(gt * pr)
     fp = torch.sum(pr) - tp
@@ -29,7 +29,7 @@ def precision(pr, gt, threshold=None, ignore_channels=None):
     return score
 
 
-def recall(pr, gt, threshold=None, ignore_channels=None):
+def recall(pr, gt):
     tp = torch.sum(gt * pr)
     fn = torch.sum(gt) - tp
 
